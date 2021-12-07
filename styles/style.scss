@@ -17,11 +17,15 @@ html {
     scroll-behavior: smooth;
     color: e7e7e7;
     background-color: rgb(19, 19, 19);
+    color: white;
 }
 
 a {
     text-decoration: none;
     color: rgb(3, 155, 155);
+    &:hover {
+        color: rgba(189, 72, 0, 1);
+    }
 }
 
 ul {
@@ -66,6 +70,7 @@ nav {
 }
 .nav-logo {
     width: 7rem;
+    opacity: 0.8;
 }
 
 .burger-menu-icon {
@@ -75,7 +80,7 @@ nav {
     right: 0;
     top: 0;
     background: rgba(55, 55, 55, 0.5);
-    padding: 1.2rem;
+    padding: 1.5rem;
     border-radius: 0% 0% 0% 40%;
 }
 
@@ -145,15 +150,10 @@ nav {
     margin: 1.2rem 0;
 }
 
-.caption {
-    // margin-left: 5px;
-}
-
 .nav-link {
     opacity: 1;
     font-size: 1.3rem;
     text-transform: uppercase;
-    color: #cecece;
     letter-spacing: 1.5px;
     &:hover {
         color: rgba(249, 105, 14, 1);
@@ -209,7 +209,6 @@ nav {
     width: 100%;
     max-width: 58rem;
     text-transform: uppercase;
-    color: white;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -272,10 +271,10 @@ nav {
 }
 
 .btn {
+    color: white;
     margin: 0 9px;
     background: rgba(3, 155, 155, 1);
     border-radius: 2rem;
-    color: #fafafa;
     padding: 1rem 2.5rem;
     display: inline-block;
     margin-top: 2rem;
@@ -373,7 +372,6 @@ hr {
     min-height: 100vh;
     max-width: 90rem;
     margin: auto;
-    color: white;
 }
 
 .title-heading {
@@ -430,9 +428,8 @@ hr {
 .projects {
     padding: 3rem 0;
     min-height: 100vh;
-    max-width: 70rem;
+    max-width: 90rem;
     margin: auto;
-    color: white;
 }
 
 .has-margin-right {
@@ -478,4 +475,54 @@ hr {
     display: inline-block;
     margin: 2rem 0;
     font-size: 1.4rem;
+}
+
+// contact
+.contact {
+    width: 100%;
+    min-height: 25vh;
+    max-width: 70rem;
+    margin: auto;
+    .container {
+        min-height: 25vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+    p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.4rem;
+        padding: 0;
+        margin: 0.9rem 2rem;
+        font-weight: bold;
+    }
+}
+
+// footer
+footer {
+    width: 100%;
+    max-width: 70rem;
+    min-height: 25vh;
+    margin: auto;
+    padding: 2.5rem 0;
+    color: #8a8a8a;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    a {
+        margin: 0 0.2rem;
+    }
+}
+
+.footer-coded-by {
+    margin: 2rem 0;
 }

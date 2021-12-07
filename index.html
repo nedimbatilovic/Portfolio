@@ -24,7 +24,7 @@
     </head>
 
     <body>
-        <!-- Header Section -->
+        <!-- header section -->
         <header>
             <div class="container">
                 <nav>
@@ -67,14 +67,18 @@
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                target="_blank"
+                                href="https://github.com/nedimbatilovic"
+                            >
+                                <i class="fa-brands fa-github"></i>
+                            </a>
                             <a class="nav-link" target="_blank" href="#">
                                 <i class="fab fa-youtube"></i>
                             </a>
                             <a class="nav-link" target="_blank" href="#">
                                 <i class="fab fa-twitter"></i>
-                            </a>
-                            <a class="nav-link" target="_blank" href="#">
-                                <i class="fa-brands fa-github"></i>
                             </a>
                         </li>
                         <div class="cta">
@@ -86,8 +90,7 @@
                 </nav>
             </div>
         </header>
-
-        <!-- Landing Page -->
+        <!-- landing page -->
         <main>
             <section id="landing-page" class="landing-page">
                 <div class="container">
@@ -114,6 +117,7 @@
                     </div>
                 </div>
             </section>
+            <!-- about section -->
             <section class="about" id="about">
                 <div class="container">
                     <div class="about-img">
@@ -153,6 +157,7 @@
                 </div>
                 <hr />
             </section>
+            <!-- services section -->
             <section class="services" id="services">
                 <div class="container">
                     <div class="title-heading">
@@ -179,6 +184,7 @@
                 </div>
                 <hr />
             </section>
+            <!-- projects section -->
             <section class="projects" id="projects">
                 <div class="title-heading">
                     <h2>PROJECTS</h2>
@@ -248,7 +254,51 @@
                         </a>
                     </div>
                 </div>
+                <hr />
             </section>
+            <!-- contact section -->
+            <section class="contact" id="contact">
+                <h2>Get In Touch</h2>
+                <p>
+                    I'd love if you reach out to me, even if it is just a
+                    greeting. Don't hesitate!
+                </p>
+                <div class="container">
+                    <p>
+                        <a href="">
+                            <i class="fas fa-envelope-open"></i>
+                            example@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        <a
+                            href="https://github.com/nedimbatilovic"
+                            target="_blank"
+                        >
+                            <i class="fa fa-github"></i>
+                            nedimbatilovic
+                        </a>
+                    </p>
+                </div>
+                <hr />
+            </section>
+            <!-- footer section -->
+            <footer>
+                <div class="footer-nav">
+                    <a href="#landing-page" class="footer-nav-link">Home</a>
+                    <a href="#about" class="footer-nav-link">About</a>
+                    <a href="#services" class="footer-nav-link">Services</a>
+                    <a href="#projects" class="footer-nav-link">Projects</a>
+                    <a href="#contact" class="footer-nav-link">Contact</a>
+                </div>
+                <div class="footer-coded-by">
+                    <p>
+                        <i class="fas fa-code"></i>
+                        with 💖 by Nedim Batilović © 2021
+                    </p>
+                    <p>Built with HTML, SCSS and JavaScript</p>
+                </div>
+            </footer>
         </main>
 
         <script src="app.js"></script>
