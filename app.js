@@ -19,3 +19,10 @@ selectElement(
         });
     })
 );
+
+navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        selectElement(".nav-list").classList.toggle("active");
+        selectElement(".burger-menu-icon").classList.toggle("burger-rotate");
+    });
+});
