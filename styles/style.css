@@ -387,7 +387,16 @@ nav {
 .about-text-box h2 {
   font-size: 4rem;
   margin: 2rem 0 3.5rem 0;
-  font-size: 4rem;
+  color: #f9690e;
+  background: -webkit-gradient(linear, left top, right top, from(rebeccapurple), color-stop(25%, #f9690e));
+  background: linear-gradient(to right, rebeccapurple 0%, #f9690e 25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-text-box h3 {
+  font-size: 2rem;
+  margin: 2rem 0 1rem 0;
   color: #f9690e;
   background: -webkit-gradient(linear, left top, right top, from(rebeccapurple), color-stop(25%, #f9690e));
   background: linear-gradient(to right, rebeccapurple 0%, #f9690e 25%);
@@ -403,6 +412,25 @@ nav {
   color: whitesmoke;
   letter-spacing: 1px;
   font-weight: bold;
+}
+
+.about-text-box ul {
+  list-style-type: none;
+  font-size: 2rem;
+  padding-left: 1.8rem;
+}
+
+.about-text-box ul li {
+  font-weight: lighter;
+}
+
+.about-text-box ul li:before {
+  content: "\2022";
+  color: rebeccapurple;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 hr {
